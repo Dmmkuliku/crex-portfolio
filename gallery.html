@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>gallery</title>
+    </head>
+    <style>
+        body {
+          background-color: wheat;
+        }
+        table {
+          border-collapse: collapse;
+          width: 90%;
+          margin: 100px auto; 
+          background-color: whitesmoke; 
+          border: 2px solid whitesmoke;
+        }
+        td {
+          border: 1px solid whitesmoke;
+          padding: 20px; 
+          background-color: whitesmoke;
+        }
+      </style>
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            max-width: 1200px;
+            margin: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+    </style>
+    <body>
+        <table>
+            <tr>
+                <td>
+                  <h2 style="text-align: center;">Our Image Gallery</h2>
+                    <div class="gallery">
+                      <div class="gallery-item">
+                    <img src="image/IMG-20240516-WA0174.jpg">
+                      </div>
+                      <div class="gallery-item">
+                    <img src="image/IMG-20240516-WA0210.jpg">
+                    </div>
+                    <div class="gallery-item">
+                    <img src="image/IMG-20240516-WA0212.jpg">
+                    </div>
+                    <div class="gallery-item">
+                    <img src="image/IMG-20240516-WA0214.jpg">
+                    </div>
+                    <div class="gallery-item">
+                    <img src="image/IMG-20240516-WA0219.jpg">
+                    </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+    </body>
+</html>
